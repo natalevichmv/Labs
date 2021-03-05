@@ -11,6 +11,8 @@ public:
     
   Matrix& operator=(const Matrix& other);
   
+  double* operator[](int index);  // может выбросить исключение
+
   friend Matrix operator-(const Matrix& other);  // унарный оператор
     
   Matrix& operator+=(const Matrix& other);  // может выбросить исключение
@@ -30,13 +32,10 @@ public:
 
   friend ostream& operator<<(ostream& out, const Matrix& matrix);
 
-  double* operator[](int index);  // может выбросить исключение
-  const double* operator[](int index) const;  // может выбросить исключение
-
-  int Rows() const;
-  int Columns() const;
-  Matrix Transpose() const;
-  friend Matrix Identity(int size);
+  int Rows();
+  int Columns();
+  Matrix Transpose();  // транспонированная матрица
+  friend Matrix Identity(int size);  // единичная матрица
 };
 
 int main() {
