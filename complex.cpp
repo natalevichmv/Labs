@@ -4,7 +4,7 @@ class Complex {
  private:
   double real_;
   double imag_;
-  
+
  public:
   // 3 балла
   Complex();
@@ -26,7 +26,7 @@ class Complex {
 
   friend ostream& operator<<(ostream& out, const Complex& complex);
 
-  // 2 балла
+  // 3 балла
   double Real() const;
   double Imaginary() const;
   double Abs() const;
