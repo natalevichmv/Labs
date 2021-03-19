@@ -1,2 +1,2 @@
-# MatrixLab
-Second lab for C++ training
+# Labs
+Labs for C++ programming in BSU
